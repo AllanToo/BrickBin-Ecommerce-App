@@ -54,7 +54,7 @@ const Login = () => {
           type="text"
           name="username"
           onChange={handleUsernameChange}
-          placeholder="Enter Admin Name"
+          placeholder="Username: admin"
           required
         />
         <input
@@ -62,7 +62,7 @@ const Login = () => {
           type="password"
           name="password"
           onChange={handlePasswordChange}
-          placeholder="Enter your Password"
+          placeholder="Password: password"
           required
         />
         <input
@@ -73,7 +73,7 @@ const Login = () => {
 
         />
         <h6 className="loginstatus">{loginStatus}</h6>
-        <span>Forget Password or Username?</span> | <span>Please contact website makers</span>
+       
       </form>
     </div>
   );

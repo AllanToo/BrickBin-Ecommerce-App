@@ -5,13 +5,14 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const AddProducts = () => {
+  // test git reset
   const [products, setProducts] = useState({
     setNumber: "",
     setName: "",
     setPrice: null,
     setLocation: "",
     setQuantity: null,
-    setImage: "",
+   // setImage: "",
     setTheme: null,
   });
 
@@ -95,7 +96,8 @@ const AddProducts = () => {
                 required
               />
             </Grid>
-            <Grid item xs={12}>
+            
+           {/*} <Grid item xs={12}>
               <input
                 accept="image/*"
                 style={{ display: "none" }}
@@ -104,9 +106,10 @@ const AddProducts = () => {
                 onChange={handleImageChange}
                 required
               />
+            
               <input
                 type="text"
-                placeholder="Image"
+                placeholder="please use temp.png"
                 onChange={handleChange}
                 name="setImage"
                 required
@@ -117,6 +120,8 @@ const AddProducts = () => {
                   : "No image selected"}
               </Typography>
             </Grid>
+                */}
+
             <Grid item xs={12}>
               <Typography variant="subtitle1">Change Category:</Typography>
               <Select
@@ -149,7 +154,7 @@ const AddProducts = () => {
                 <MenuItem value="21">LEGO Retired</MenuItem>
               </Select>
             </Grid>
-
+     
             <Grid item xs={12}>
               <Button
                 fullWidth

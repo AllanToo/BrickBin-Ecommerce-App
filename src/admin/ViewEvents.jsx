@@ -52,20 +52,8 @@ const ViewEvents = () => {
                   <p className="card-text">Number of Guests: {event.event_number_guest}</p>
                   <p className="card-text">Event Description: {event.event_description}</p>
 
-                  <Button
-                    variant="primary"
-                    className="mr-2"
-                    onClick={() => handleAddToCalendar(event)}
-                  >
-                    Add to Calendar
-                  </Button>
-                  <Button
-                    variant="danger"
-                    className="mr-2"
-                    onClick={handleRemoveEvent(event.event_id)}
-                  >
-                    Remove Event
-                  </Button>
+                 
+                 
                   {event.status === "upcoming" && (
                     <Button
                       variant="success"

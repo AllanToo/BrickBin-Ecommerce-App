@@ -38,7 +38,7 @@ export default function Checkout() {
   const [product, setProduct] = useState([]);
   const [userInfo, setUserInfo] = useState({
     firstName: "",
-    lastName: "",
+    lastName: "", 
     email: "",
   });
   const [paymentInfo, setPaymentInfo] = useState({
